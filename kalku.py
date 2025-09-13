@@ -32,6 +32,7 @@ if st.button("🔎 Hitung Harga Bersih"):
     ongkir_per_produk = (ONGKIR_KOREA / pembeli) * rate
     tambahan_per_produk = TAMBAHAN_DIBAGI / pembeli
     total = harga_idr + ongkir_per_produk + TAMBAHAN_TETAP + tambahan_per_produk
+    total_rounded = round(total, -2)
 
     # Hasil akhir
     st.success(f"✅ Harga Bersih per Produk: Rp {total:,.0f}")
