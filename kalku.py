@@ -35,4 +35,4 @@ if st.button("🔎 Hitung Harga Bersih"):
     total_rounded = round(total, -2)
 
     # Hasil akhir
-    st.success(f"✅ Harga Bersih per Produk: Rp {total:,.0f}")
+    st.success(f"✅ Harga Bersih per Produk: Rp {total_rounded:,.0f}")
